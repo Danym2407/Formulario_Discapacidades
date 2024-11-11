@@ -1,0 +1,63 @@
+/* Estilos en static/css/estilos.css */
+
+body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .navbar {
+    background-color: #c8102e; /* Rojo */
+    padding-left: 200px; /* Espacio izquierdo */
+    padding-right: 200px; /* Espacio derecho */
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos de izquierda a derecha */
+    align-items: center; /* Alinea verticalmente los elementos */
+  }
+  
+  .navbar a {
+    color: white !important;
+  }
+  
+  .navbar .navbar-brand {
+    font-size: 1.5rem; /* Tamaño de letra más grande para la marca */
+    font-weight: bold;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    font-size: 1.1rem; /* Tamaño de letra de los enlaces */
+    padding-left: 15px; /* Espaciado entre los enlaces */
+    padding-right: 15px;
+  }
+  
+  .navbar .navbar-nav {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos de navegación */
+  }
+  
+  .header {
+    background-color: #c8102e; /* Rojo */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
