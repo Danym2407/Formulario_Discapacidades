@@ -1,8 +1,18 @@
+/* Asegúrate de que el body ocupe toda la altura de la pantalla */
 body {
   background-color: #fff;
   color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
 }
 
+/* Contenedor del contenido principal */
+.container {
+  flex: 1; /* Esto asegura que el contenido se expanda para llenar el espacio disponible */
+}
+
+/* Barra de navegación */
 .navbar {
   background-color: #c8102e; /* Rojo */
   display: flex;
@@ -35,6 +45,7 @@ body {
   justify-content: space-around; /* Distribuye los elementos de navegación */
 }
 
+/* Header */
 .header {
   background-color: #c8102e; /* Rojo */
   color: white;
@@ -42,13 +53,16 @@ body {
   text-align: center;
 }
 
+/* Asegurarse de que el footer esté al fondo */
 .footer {
   background-color: #000;
   color: white;
   padding: 20px 0;
   text-align: center;
+  margin-top: auto; /* Esto empuja el footer hacia el fondo */
 }
 
+/* Galería de imágenes */
 .gallery img {
   max-width: 100%;
   height: auto;
@@ -62,6 +76,7 @@ body {
   margin-top: 30px;
 }
 
+/* Estilo del título en la página de discapacidad */
 #titulo-discapacidad {
   margin-bottom: 2rem; /* Ajusta el valor según el espacio que desees */
 }
